@@ -7,8 +7,8 @@ import {
     ImagenModal,
     TarjetaModal,
     TituloModal,
-} from "./styled";
-import { SuscribeImage, CloseButton as Close } from "../../assets";
+} from "../../styled";
+import { SuscribeImage, CloseButton as Close } from "../../../../assets";
 
 interface IModalSubscripcionProps {
     onClose: () => void;

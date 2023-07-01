@@ -16,7 +16,3 @@ export const capWords = (title: string) => {
 
   return capitalizedTitle;
 };
-
-
-
-//extraemos dos funciones que podemos utilizar en otros componentes

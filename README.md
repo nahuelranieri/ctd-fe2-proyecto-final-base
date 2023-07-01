@@ -2,6 +2,17 @@
 
 Examen Final de Frontend V de Nahuel Ranieri
 
+Punto3:
+Se aplicó el primer principio SOLID, Single Responsibility, para liberar al componente "Noticias" de responsabilidades que no le correspondían.
+
+En primer lugar, se extrajeron funciones para normalizar las noticias recibidas: capitalizeWords, calculateMinutes y normalize. Esto permite separar la lógica de transformación de datos en funciones independientes y reutilizables.
+
+Además, se extrajeron tres componentes que pueden ser reutilizados y brindan mayor legibilidad al código: ModalPremium, ModalSubscripcion y CardNoticias. Estos componentes encapsulan la estructura y la apariencia visual de diferentes elementos de la interfaz de usuario, lo que facilita su mantenimiento y comprensión.
+
+La función obtenerInformacion se movió fuera del efecto y se agregó como dependencia. De esta manera, se asegura que la función se cree solo una vez y no en cada renderizado del componente. Esto mejora el rendimiento y evita posibles efectos secundarios no deseados.
+
+En resumen, al aplicar estos cambios, el código se vuelve más modular, legible y mantenible, siguiendo el principio de responsabilidad única y promoviendo la reutilización de código.
+
 ## Indice
 
 - [Requisitos](#requisitos)

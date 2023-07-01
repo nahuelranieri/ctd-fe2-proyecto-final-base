@@ -1,4 +1,4 @@
-import { INoticias } from "./fakeRest";
+import { INoticias } from "../fakeRest";
 export interface INoticiasNormalizadas {
     id: number;
     titulo: string;

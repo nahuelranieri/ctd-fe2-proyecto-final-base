@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
-import { obtenerNoticias } from "./fakeRest";
-import { ContenedorNoticias, ListaNoticias, TituloNoticias } from "./styled";
-import { INoticiasNormalizadas } from "./contracts";
-import { toFront } from "./normalize";
-import ModalSubscripcion from "./ModalSub";
-import ModalPremium from "./ModalPremium";
+import { obtenerNoticias } from "../fakeRest";
+import { ContenedorNoticias, ListaNoticias, TituloNoticias } from "../styled";
+import { INoticiasNormalizadas } from "../hooks/contracts";
+import { toFront } from "../hooks/normalize";
+import ModalSubscripcion from "./modal/ModalSub";
+import ModalPremium from "./modal/ModalPremium";
 import CardNoticias from "./CardNoticias";
 
 const Noticias = () => {
@@ -54,9 +54,3 @@ const Noticias = () => {
 
 export default Noticias;
 
-
-// Aplicaque el primer principio SOLID, single responsability para liberar al componente "Noticias" de ciertas responsabilidades que no le eran propias.
-// En principio extraje las funciones para normalizar las noticias que recibe: capitalizeWords, calculateMinutes y noticias.mapper.
-// Por último extraje 3 componentes que pueden ser reutilizados y da más legibilidad al código: ModalPremium, ModalSubscripcion y CardNoticias.
-//Se movio la funcion obtenerInformacion fuera del effecto y se agrego como dependencia.
-//Esto asegurará que la función se cree solo una vez y no en cada renderizado 

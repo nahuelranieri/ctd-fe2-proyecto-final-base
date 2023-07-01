@@ -6,8 +6,8 @@ import {
   CotenedorTexto,
   TituloModal,
   DescripcionModal,
-} from "./styled";
-import { CloseButton as Close } from "../../assets";
+} from "../../styled";
+import { CloseButton as Close } from "../../../../assets";
 
 interface IModalPremiumProps {
   onClose: () => void;
